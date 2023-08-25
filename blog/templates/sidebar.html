@@ -1,0 +1,26 @@
+{% load static %}
+{% block sidebar %}
+
+<style>
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
+</style>
+
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right">
+    <div class="card my-4">
+        <img src="{% static 'images/1.jpg' %}{{ sidebar_image }}" class="card-img-top" alt="Sidebar Image">
+        <h5 class="card-header">About Us</h5>
+        <div class="card-body">
+            <p class="card-text"> We are a dedicated team of professionals committed to delivering top-notch solutions tailored to your specific needs. From web development and design to mobile app creation and digital marketing, we've got you covered.</p>
+            <a href="#"
+               class="btn btn-danger">Know more!</a>
+        </div>
+    </div>
+</div>
+
+{% endblock sidebar %}
+<a href="{% url 'all_posts' %}">Show All Posts</a>
+
